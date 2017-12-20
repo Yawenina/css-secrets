@@ -1,0 +1,18 @@
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+.title {
+  text-align: center;
+}
+.box {
+  max-width: 15em;
+  height: 5em;
+  padding: 1em;
+  margin: 2em auto 0;
+  font: 100%/1.5 sans-serif;
+}

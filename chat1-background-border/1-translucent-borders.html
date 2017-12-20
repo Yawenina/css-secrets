@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>1-translucent-borders.html</title>
+  <link rel="stylesheet" href="../common.css">
+  <style>
+    .bg {
+      border: 10px dashed darkseagreen;
+      background: yellow;
+    }
+    .border-box {
+      background-clip: border-box;
+    }
+    .padding-box {
+      background-clip: padding-box;
+    }
+    .content-box {
+      background-clip: content-box;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Translucent Borders</h1>
+  <div class="wrapper flex">
+    <div class="box bg border-box">
+      border-box(initial)
+    </div>
+    <div class="box bg padding-box">
+      padding-box
+    </div>
+    <div class="box bg content-box">
+      content-box
+    </div>
+  </div>
+</body>
+</html>

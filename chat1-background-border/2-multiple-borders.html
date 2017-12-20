@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multiple Borders</title>
+  <link rel="stylesheet" href="../common.css">
+  <style>
+    .border {
+      background: yellowgreen;
+      box-shadow: 0 0 0 10px #655,
+            0 0 0 15px pink,
+            0 0 0 20px deeppink,
+            0 0px 5px 15px rgba(0,0,0,.6);
+    }
+    .outline {
+      background: yellowgreen;
+      border: 10px solid #655;
+      outline: 5px solid deeppink;
+    }
+    .outline-style {
+      background: yellowgreen;
+      border: 10px solid #655;
+      outline: 5px dashed deeppink;
+    }
+    .border-radius {
+      background: yellowgreen;      
+      border-radius: 10px;
+      box-shadow: 0 0 0 10px #655,
+            0 0 0 15px pink,
+            0 0 0 20px deeppink,
+            0 0px 5px 15px rgba(0,0,0,.6);
+    }
+    .outline-radius {
+      border-radius: 20px;      
+      background: yellowgreen;
+      outline: 5px dashed deeppink;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Multiple Borders</h1>
+  <div class="wrapper flex">
+    <div class="box border">Box Shadow</div>
+    <div class="box outline">Outline</div>
+    <div class="box outline-style">Outline with styles</div>
+    <div class="box border-radius">Box Shadow with radius</div>
+    <div class="box outline-radius">Outline with radius</div>
+  </div>
+</body>
+</html>
