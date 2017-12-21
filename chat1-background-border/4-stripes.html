@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stripes</title>
+  <link rel="stylesheet" href="../common.css">
+  <style>
+    .horizontal {
+      background: linear-gradient(#fb3 50%, #58a 0);
+      background-size: 100% 30px;
+    }
+    .vertical {
+      background: linear-gradient(to right, #fb3 50%, #58a 0);
+      background-size: 30px 100%;
+    }
+    .triple {
+      background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+      background-size: 100% 45px;
+    }
+    .diagonal {
+      background: repeating-linear-gradient(45deg, #fb3, #fb3 15px, #58a 0, #58a 30px);
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">条纹背景</h1>
+  <div class="wrapper flex">
+    <div class="box horizontal"></div>
+    <div class="box vertical"></div>
+    <div class="box triple"></div>
+    <div class="box diagonal"></div>
+  </div>
+</body>
+</html>

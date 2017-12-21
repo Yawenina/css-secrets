@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Background Origin</title>
+  <link rel="stylesheet" href="../common.css">
+  <style>
+    .bg-pos {
+      background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right #58a;
+      background-position: right 20px bottom 10px;
+      border: 5px solid paleturquoise;
+    }
+    .content {
+      background-origin: content-box
+    }
+    .border {
+      background-origin: border-box;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Background Position</h1>
+  <div class="wrapper flex">
+    <div class="box bg-pos">background position</div>
+  </div>
+  <h1 class="title">Background Origin</h1>
+  <div class="wrapper flex">
+    <div class="box bg-pos content">background-origin: content-box</div>
+    <div class="box bg-pos padding">background-origin: padding-box(默认)</div>
+    <div class="box bg-pos border">background-origin: border-box</div>
+  </div>
+</body>
+</html>
